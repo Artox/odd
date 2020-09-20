@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+<device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../zcl.xsd">
+	<endpoint id="1">
+		<zcl:cluster xmlns:zcl="http://zigbee.org/zcl/clusters" id="0002" revision="0" name="types">
+			<classification role="utility" picsCode="B"/>
+			<server>
+				<attributes>
+					<attribute id="0000" name="bool" type="bool"/>
+					<attribute id="0001" name="int8" type="int8"/>
+					<attribute id="0002" name="int16" type="int16"/>
+					<attribute id="0003" name="int32" type="int32"/>
+					<attribute id="0004" name="uint8" type="uint8"/>
+					<attribute id="0005" name="uint16" type="uint16"/>
+					<attribute id="0006" name="uint32" type="uint32"/>
+					<attribute id="0007" name="string" type="string"/>
+					<attribute id="0008" name="time" type="UTC"/>
+				</attributes>
+			</server>
+		</zcl:cluster>
+	</endpoint>
+</device>

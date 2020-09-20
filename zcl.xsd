@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:zcl="http://zigbee.org/zcl/clusters">
+	<xs:import namespace="http://zigbee.org/zcl/clusters" schemaLocation="./zcl/cluster.xsd"/>
+
+	<xs:complexType name="Endpoint">
+		<xs:sequence>
+			<xs:element ref="zcl:cluster" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:integer" use="required"/>
+	</xs:complexType>
+
+	<xs:complexType name="EndpointList">
+		<xs:sequence>
+			<xs:element name="endpoint" type="Endpoint" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="device" type="EndpointList"/>
+</xs:schema>

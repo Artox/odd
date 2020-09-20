@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+<device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../zcl.xsd">
+	<endpoint id="1">
+		<zcl:cluster xmlns:zcl="http://zigbee.org/zcl/clusters" id="0003" revision="0" name="clock">
+			<classification role="utility" picsCode="B"/>
+			<server>
+				<attributes>
+					<attribute id="0000" name="time" type="UTC"/>
+				</attributes>
+			</server>
+		</zcl:cluster>
+	</endpoint>
+</device>
